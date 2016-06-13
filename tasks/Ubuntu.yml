@@ -6,7 +6,7 @@
 
 - name: Install bouncy castle crypto libraries
   apt: name={{ item }} state=latest
-  with_itmes:
+  with_items:
     - libbcprov-java
     - libbcpkix-java
   notify: restart gerrit
